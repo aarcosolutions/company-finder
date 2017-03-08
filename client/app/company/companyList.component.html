@@ -1,0 +1,30 @@
+<company-search (searchResultCompleted) = 'onSearchResultCompleted($event)'>loading search component....</company-search>
+<div class="mdl-grid" *ngIf='companies && companies.length'>
+    <div class="card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col" *ngFor="let company of companies">
+        <div class="mdl-card__title mdl-card--expand">
+            <h1 class="mdl-card__title-text">{{company.title}}</h1>
+        </div>
+        <div class="mdl-card__supporting-text">
+            {{company.title}} is a {{company.type}} company which was incorporated on {{company.incorporationDate}}. It is currently {{company.status}} and it's
+            company number is {{company.number}}
+        </div>
+        <div class="mdl-card__supporting-text">
+            It's registered office address is {{company.registeredAddress}}.
+        </div>
+    </div>
+</div>
+
+<!--<div class="mdl-grid">
+    <div class="card-wide mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+        <div class="mdl-card__title mdl-card--expand">
+            <h1 class="mdl-card__title-text">Aarco Solutions Limited</h1>
+        </div>
+        <div class="mdl-card__supporting-text">
+            Aarco Solutions Limited is a Private Limited Company. was incorporated on 28th June 2010. It is currently active and it's
+            company number is 1234567
+        </div>
+        <div class="mdl-card__supporting-text">
+            It's registered office address is 112 Morden Road, London, SW19 3BP.
+        </div>
+    </div>
+</div>-->

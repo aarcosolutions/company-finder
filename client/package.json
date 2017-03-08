@@ -1,0 +1,48 @@
+{
+  "name": "company-search",
+  "version": "1.0.0",
+  "description": "Demo app which utlises Company House Api, Angular Js2, Material Design Lite",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lint": "tslint ./app/**/*.ts -t verbose",
+    "lite": "lite-server",
+    "typings": "typings",
+    "postinstall": "typings install"
+  },
+  "keywords": [
+    "aspnetcore",
+    "materal",
+    "design",
+    "angular2",
+    "company",
+    "house",
+    "api"
+  ],
+  "author": "amit.sharma@aarcosolutions.co.uk",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "~2.4.0",
+    "@angular/compiler": "~2.4.0",
+    "@angular/core": "~2.4.0",
+    "@angular/forms": "~2.4.0",
+    "@angular/http": "~2.4.0",
+    "@angular/platform-browser": "~2.4.0",
+    "@angular/platform-browser-dynamic": "~2.4.0",
+    "@angular/router": "~3.4.0",
+    "angular-in-memory-web-api": "~0.2.4",
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.1",
+    "systemjs": "0.19.40",
+    "zone.js": "^0.7.4"
+  },
+  "devDependencies": {
+    "concurrently": "^2.2.0",
+    "lite-server": "^2.2.0",
+    "tslint": "^3.7.4",
+    "typescript": "^2.0.2",
+    "typings": "^1.0.4"
+  }
+}
