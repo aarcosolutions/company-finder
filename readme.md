@@ -5,7 +5,7 @@ The best way to learn a technology is to get your hands dirty. Hence I started d
 * [Angular2] (https://angular.io/)
 * [ASP.NET Core] (https://docs.microsoft.com/en-us/aspnet/core/)
 * [TypeScript] (https://www.typescriptlang.org/)
-* [Company House API] (https://developer.companieshouse.gov.uk/api/docs/index/gettingStarted.html)
+* [Companies House API] (https://developer.companieshouse.gov.uk/api/docs/index/gettingStarted.html)
 
 
 The application design is very simple. I have tried to explain it in the following diagram:
@@ -27,7 +27,7 @@ Software requirement:
 * [ASP.NET Core 1.1.1 SDK](https://go.microsoft.com/fwlink/?linkid=843448)
 * Text Editor of your choice. I have used Visual Studio code and Visual Studion 2017 Professional
 
-### Running Company Finder website locally:
+### Running Company Finder website:
 
 Clone the repository locally. Open command prompt and navigate to "client" folder in the location where the repository is cloned.
 Restore node dependencies by executing:
@@ -36,7 +36,7 @@ Restore node dependencies by executing:
 Run the CompanyFinder website by executing:
 > npm start
 
-### Running Company Finder api locally
+### Running Company Finder API:
 
 Clone the repository locally. Open command prompt and navigate to "api" folder in the location where the repository is cloned.
 Restore nuget packages:
@@ -45,6 +45,11 @@ Restore nuget packages:
 Run the CompanyFinder API by executing:
 > dotnet run
 
+### Config changes:
+
+* You will have to update the base url of CompanyFinder API. It is specified in **client/app/company/company.service.ts** file. Update the value of **_companySearchUrl** property.
+
+* You will also have to udate the Companies House API key in the CompanyFinder API project. It is specified in **api/companyHouseConfig.json**. Update the value of **ApiKey** property. You will have to register with Companies House Developer Hub to obtain the API key.
 
 
 
