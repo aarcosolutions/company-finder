@@ -6,3 +6,46 @@ The best way to learn a technology is to get your hands dirty. Hence I started d
 * [ASP.NET Core] (https://docs.microsoft.com/en-us/aspnet/core/)
 * [TypeScript] (https://www.typescriptlang.org/)
 * [Company House API] (https://developer.companieshouse.gov.uk/api/docs/index/gettingStarted.html)
+
+
+The application design is very simple. I have tried to explain it in the following diagram:
+
+![high-level-desigh](https://github.com/aarcosolutions/company-finder/blob/master/diagrams/highlevel-design.jpg)
+
+The website consist of three angular components and a service which retrieve data from CompanyFinder Api. Following diagram will give you an idea of the angular components
+
+![angular-component-interaction](https://github.com/aarcosolutions/company-finder/blob/master/diagrams/angular-component-interaction.jpg)
+
+I have hosted this application in Azure. You can see the demo site at [Company Finder](http://companysearch.azurewebsites.net/)
+
+---
+
+##Steps for configuring this code locally:
+
+Software requirement:
+* [nodejs - v7.7.1](https://nodejs.org/dist/v7.7.1/node-v7.7.1-x64.msi)
+* [ASP.NET Core 1.1.1 SDK](https://go.microsoft.com/fwlink/?linkid=843448)
+* Text Editor of your choice. I have used Visual Studio code and Visual Studion 2017 Professional
+
+### Running Company Finder website locally:
+
+Clone the repository locally. Open command prompt and navigate to "client" folder in the location where the repository is cloned.
+Restore node dependencies by executing:
+> npm install
+
+Run the CompanyFinder website by executing:
+> npm start
+
+### Running Company Finder api locally
+
+Clone the repository locally. Open command prompt and navigate to "api" folder in the location where the repository is cloned.
+Restore nuget packages:
+> dotnet restore
+
+Run the CompanyFinder API by executing:
+> dotnet run
+
+
+
+
+
