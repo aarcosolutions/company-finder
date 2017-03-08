@@ -1,0 +1,7 @@
+﻿{
+  "CompanyHouse": {
+    "ApiKey": "<Use your API key. Checkout https://developer.companieshouse.gov.uk/api/docs/index/gettingStarted.html>",
+    "BaseUrl": "https://api.companieshouse.gov.uk",
+    "ItemsPerPage": "50"
+  }
+}
