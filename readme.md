@@ -20,7 +20,32 @@ I have hosted this application in Azure. You can see the demo site at [Company F
 
 ---
 
-##Steps on how to configure the code locally?
+##Steps for configuring this code locally:
 
-First you will need to clone this repository
-> git clone https://github.com/aarcosolutions/company-finder.git
+Software requirement:
+* [nodejs - v7.7.1](https://nodejs.org/dist/v7.7.1/node-v7.7.1-x64.msi)
+* [ASP.NET Core 1.1.1 SDK](https://go.microsoft.com/fwlink/?linkid=843448)
+* Text Editor of your choice. I have used Visual Studio code and Visual Studion 2017 Professional
+
+### Running Company Finder website locally:
+
+Clone the repository locally. Open command prompt and navigate to "client" folder in the location where the repository is cloned.
+Restore node dependencies by executing:
+> npm install
+
+Run the CompanyFinder website by executing:
+> npm start
+
+### Running Company Finder api locally
+
+Clone the repository locally. Open command prompt and navigate to "api" folder in the location where the repository is cloned.
+Restore nuget packages:
+> dotnet restore
+
+Run the CompanyFinder API by executing:
+> dotnet run
+
+
+
+
+
