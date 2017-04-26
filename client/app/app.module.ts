@@ -1,14 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {FormsModule} from '@angular/forms'
-import {HttpModule} from '@angular/http'
+import { HttpModule } from '@angular/http'
 import { AppComponent } from './app.component';
-import {CompanyListComponent} from './company/companyList.component';
-import {CompanySearchComponent} from './company/companySearch.component';
+import { CompanyModule } from './company/company.module';
 
 @NgModule({
-    imports: [BrowserModule, FormsModule, HttpModule],
-    declarations: [AppComponent, CompanyListComponent, CompanySearchComponent],
+    imports: [BrowserModule, HttpModule, CompanyModule],
+    declarations: [AppComponent],
     bootstrap: [AppComponent]
 })
 
